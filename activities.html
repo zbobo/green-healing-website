@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>活動紀錄 · 綠色療育</title>
+  <meta name="description" content="瀏覽綠色療育歷次樂齡手作活動的精彩紀錄，包含乾燥花、植物染、苔球等課程。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600&family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ====== NAVBAR ====== -->
+  <header class="navbar">
+    <div class="container">
+      <nav class="navbar-inner">
+        <a href="index.html" class="navbar-brand">
+          <svg class="navbar-brand-icon" viewBox="0 0 36 36" fill="none">
+            <circle cx="18" cy="18" r="18" fill="#E4EEE0"/>
+            <path d="M18 28C18 28 10 22 10 16a8 8 0 0 1 8-8 8 8 0 0 1 8 8c0 6-8 12-8 12z" fill="#5C7A4E"/>
+            <path d="M18 20v6M14 18c2-1 4-1 4 2" stroke="#3E5534" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+          綠色療育
+        </a>
+        <ul class="navbar-links">
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="about.html">關於我們</a></li>
+          <li><a href="activities.html">活動紀錄</a></li>
+          <li><a href="contact.html">聯絡合作</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+      <nav class="mobile-nav" id="mobileNav">
+        <a href="index.html">首頁</a>
+        <a href="about.html">關於我們</a>
+        <a href="activities.html">活動紀錄</a>
+        <a href="contact.html">聯絡合作</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ====== PAGE HERO ====== -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-label">活動紀錄</span>
+        <h1>每一次相聚的痕跡</h1>
+        <p>我們記錄每一場活動，因為每一雙參與的手，都值得被記住。</p>
+      </div>
+    </section>
+
+    <!-- ====== ACTIVITIES ====== -->
+    <section class="section">
+      <div class="container">
+
+        <!-- Filter -->
+        <div class="activities-filter">
+          <button class="filter-btn active">全部</button>
+          <button class="filter-btn">植物</button>
+          <button class="filter-btn">編織</button>
+          <button class="filter-btn">印染</button>
+          <button class="filter-btn">花藝</button>
+        </div>
+
+        <!-- Activity Grid -->
+        <!--
+          ===================================================
+          新增活動說明：
+          複製下方一個 <article class="card"> ... </article>
+          區塊，貼在最前面（最新活動放最上面），
+          修改日期、標籤、標題、描述即可。
+          照片請放在 images/ 資料夾，取消 <img> 的註解。
+          ===================================================
+        -->
+        <div class="grid-3">
+
+          <article class="card">
+            <div class="card-image" style="background: linear-gradient(135deg, #C8DCBA, #D4E6C8);">
+              <!-- <img src="images/act-06.jpg" alt="香草盆栽組合" /> -->
+              <div class="card-image-placeholder">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M20 34C20 34 8 27 8 19a12 12 0 0 1 12-12 12 12 0 0 1 12 12c0 8-12 15-12 15z" fill="#5C7A4E" opacity="0.4"/>
+                </svg>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-date">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><rect x="1.5" y="2" width="10" height="9.5" rx="1.5" stroke="#7A6E63" stroke-width="1.2"/><path d="M4.5 1v2M8.5 1v2M1.5 5.5h10" stroke="#7A6E63" stroke-width="1.2" stroke-linecap="round"/></svg>
+                  2024年8月15日
+                </span>
+                <span class="card-tag">植物</span>
+              </div>
+              <h3>香草盆栽組合</h3>
+              <p>親手栽種薄荷、迷迭香、羅勒，了解各種香草的療癒特性與日常應用，帶著屬於自己的清香回家。學員在課後紛紛表示希望在家中也能延續這份與植物的連結。</p>
+              <a href="#" class="card-link">閱讀更多 →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-image" style="background: linear-gradient(135deg, #E8D5B0, #F0E0C0);">
+              <!-- <img src="images/act-05.jpg" alt="稻草編織體驗" /> -->
+              <div class="card-image-placeholder">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M20 34C20 34 8 27 8 19a12 12 0 0 1 12-12 12 12 0 0 1 12 12c0 8-12 15-12 15z" fill="#C4956A" opacity="0.4"/>
+                </svg>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-date">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><rect x="1.5" y="2" width="10" height="9.5" rx="1.5" stroke="#7A6E63" stroke-width="1.2"/><path d="M4.5 1v2M8.5 1v2M1.5 5.5h10" stroke="#7A6E63" stroke-width="1.2" stroke-linecap="round"/></svg>
+                  2024年7月20日
+                </span>
+                <span class="card-tag">編織</span>
+              </div>
+              <h3>稻草編織體驗</h3>
+              <p>以傳統稻草為素材，在老師帶領下學習基礎編織技法，創作出充滿鄉土氣息的小型裝飾品。許多長輩分享兒時農村記憶，課堂中充滿溫暖的笑聲。</p>
+              <a href="#" class="card-link">閱讀更多 →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-image" style="background: linear-gradient(135deg, #B8D4B0, #CCE0C0);">
+              <!-- <img src="images/act-04.jpg" alt="植物拓印手帕" /> -->
+              <div class="card-image-placeholder">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M20 34C20 34 8 27 8 19a12 12 0 0 1 12-12 12 12 0 0 1 12 12c0 8-12 15-12 15z" fill="#8FAF7E" opacity="0.45"/>
+                </svg>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-date">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><rect x="1.5" y="2" width="10" height="9.5" rx="1.5" stroke="#7A6E63" stroke-width="1.2"/><path d="M4.5 1v2M8.5 1v2M1.5 5.5h10" stroke="#7A6E63" stroke-width="1.2" stroke-linecap="round"/></svg>
+                  2024年6月8日
+                </span>
+                <span class="card-tag">印染</span>
+              </div>
+              <h3>植物拓印手帕</h3>
+              <p>採集庭院中的新鮮植葉，透過槌打拓印的方式，將植物的顏色與紋路永久留存在純棉手帕上，每一件都是大自然的原創藝術。</p>
+              <a href="#" class="card-link">閱讀更多 →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-image" style="background: linear-gradient(135deg, #D4C0D8, #E0D0E8);">
+              <!-- <img src="images/act-03.jpg" alt="苔蘚球製作" /> -->
+              <div class="card-image-placeholder">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <circle cx="20" cy="20" r="12" fill="#6B8F5E" opacity="0.25"/>
+                  <circle cx="20" cy="20" r="7" fill="#6B8F5E" opacity="0.25"/>
+                </svg>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-date">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><rect x="1.5" y="2" width="10" height="9.5" rx="1.5" stroke="#7A6E63" stroke-width="1.2"/><path d="M4.5 1v2M8.5 1v2M1.5 5.5h10" stroke="#7A6E63" stroke-width="1.2" stroke-linecap="round"/></svg>
+                  2024年5月18日
+                </span>
+                <span class="card-tag">植物</span>
+              </div>
+              <h3>苔蘚球製作</h3>
+              <p>以雙手感受土壤與苔蘚的觸感，將植物包裹成圓潤的球形，是一堂讓學員深度接觸大地的療癒體驗。完成的苔球各個充滿生命力。</p>
+              <a href="#" class="card-link">閱讀更多 →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-image" style="background: linear-gradient(135deg, #C8D8E8, #D8E8F0);">
+              <!-- <img src="images/act-02.jpg" alt="天然染布體驗" /> -->
+              <div class="card-image-placeholder">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M20 34C20 34 8 27 8 19a12 12 0 0 1 12-12 12 12 0 0 1 12 12c0 8-12 15-12 15z" fill="#5C7A9E" opacity="0.3"/>
+                </svg>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-date">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><rect x="1.5" y="2" width="10" height="9.5" rx="1.5" stroke="#7A6E63" stroke-width="1.2"/><path d="M4.5 1v2M8.5 1v2M1.5 5.5h10" stroke="#7A6E63" stroke-width="1.2" stroke-linecap="round"/></svg>
+                  2024年4月13日
+                </span>
+                <span class="card-tag">印染</span>
+              </div>
+              <h3>天然染布體驗</h3>
+              <p>以洋蔥皮、茶葉等廚房常見食材提取天然色素，為棉布手帕染上溫柔的大地色彩，每件作品都是獨一無二的色彩故事。</p>
+              <a href="#" class="card-link">閱讀更多 →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-image" style="background: linear-gradient(135deg, #F0D8C8, #F8E8D8);">
+              <!-- <img src="images/act-01.jpg" alt="乾燥花押花卡片" /> -->
+              <div class="card-image-placeholder">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <circle cx="20" cy="20" r="6" fill="#C4956A" opacity="0.3"/>
+                  <path d="M20 8v6M20 26v6M8 20h6M26 20h6" stroke="#C4956A" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+                </svg>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-date">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><rect x="1.5" y="2" width="10" height="9.5" rx="1.5" stroke="#7A6E63" stroke-width="1.2"/><path d="M4.5 1v2M8.5 1v2M1.5 5.5h10" stroke="#7A6E63" stroke-width="1.2" stroke-linecap="round"/></svg>
+                  2024年3月9日
+                </span>
+                <span class="card-tag">花藝</span>
+              </div>
+              <h3>乾燥花押花卡片</h3>
+              <p>選用台灣在地的乾燥花材，以押花技法製作充滿溫度的手作卡片。這是我們第一場正式公開課程，也是一切的起點。</p>
+              <a href="#" class="card-link">閱讀更多 →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CTA ====== -->
+    <section class="section-sm" style="background-color:var(--clr-surface); text-align:center; border-top:1px solid var(--clr-border);">
+      <div class="container">
+        <p style="color:var(--clr-muted); margin-bottom:1rem;">想讓我們將療癒手作帶到你的場域？</p>
+        <a href="contact.html" class="btn btn-primary">與我們合作</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <div class="container">
+      <div class="footer-main">
+        <div>
+          <div class="footer-brand-name">
+            <svg width="22" height="22" viewBox="0 0 36 36" fill="none">
+              <circle cx="18" cy="18" r="18" fill="rgba(255,255,255,0.1)"/>
+              <path d="M18 28C18 28 10 22 10 16a8 8 0 0 1 8-8 8 8 0 0 1 8 8c0 6-8 12-8 12z" fill="rgba(255,255,255,0.8)"/>
+            </svg>
+            綠色療育
+          </div>
+          <p class="footer-desc">用雙手感受自然，以創作療癒心靈。<br>樂齡手作工坊，陪伴每一位長輩。</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>網站導覽</h4>
+          <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="about.html">關於我們</a></li>
+            <li><a href="activities.html">活動紀錄</a></li>
+            <li><a href="contact.html">聯絡合作</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>聯絡方式</h4>
+          <ul>
+            <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li><a href="#">LINE 官方帳號</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 綠色療育・樂齡手作工坊</span>
+        <span>以自然之心，陪伴每一雙手</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // 篩選按鈕互動（前端簡易版）
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
